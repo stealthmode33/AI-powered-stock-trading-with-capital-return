@@ -1,0 +1,20 @@
+# 1. Create a new repo at github.com, then:
+git init ai-stock-trader
+cd ai-stock-trader
+
+# 2. Drop all the downloaded files in here, then:
+git add .
+git commit -m "Initial commit: AI stock trader powered by Claude + Alpaca"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/ai-stock-trader.git
+git push -u origin main
+```
+
+The repo structure is:
+```
+ai-stock-trader/
+├── ai_trader.py        ← all the logic
+├── README.md           ← full docs with usage examples
+├── requirements.txt    ← pip dependencies
+├── .env.template       ← copy to .env, add your keys
+└── .gitignore          ← keeps .env and __pycache__ out of git
